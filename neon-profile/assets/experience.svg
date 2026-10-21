@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="466" viewBox="0 0 900 466" font-family="'JetBrains Mono','SF Mono',Consolas,'Courier New',monospace">
+<style>
+.fu{animation:fu .8s ease-out both}
+@keyframes fu{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.fi{animation:fi 1s ease-out both}
+@keyframes fi{from{opacity:0}to{opacity:1}}
+.pulse{animation:pulse 2.4s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:.35}50%{opacity:1}}
+.blink{animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.pop{transform-box:fill-box;transform-origin:center;animation:pop .5s ease-out both}
+@keyframes pop{from{opacity:0;transform:scale(.2)}to{opacity:1;transform:scale(1)}}
+.run{stroke-dasharray:130 870;animation:run 5s linear infinite}
+@keyframes run{to{stroke-dashoffset:-1000}}
+.scan{animation:scan 6s linear infinite}
+@keyframes scan{from{transform:translateX(0)}to{transform:translateX(1000px)}}
+.scan2{animation:scan2 5s ease-in-out infinite alternate}
+@keyframes scan2{from{transform:translateX(0)}to{transform:translateX(800px)}}
+.grow{animation:grow 1.4s ease-out both}
+@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.draw{transform-box:fill-box;transform-origin:top;animation:draw 1.6s ease-out both}
+@keyframes draw{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+.rA{animation:roleA 9s linear infinite}
+@keyframes roleA{0%,28%{opacity:1}33%,95%{opacity:0}100%{opacity:1}}
+.rB{opacity:0;animation:role 9s linear 3s infinite}
+.rC{opacity:0;animation:role 9s linear 6s infinite}
+@keyframes role{0%{opacity:0}5%,28%{opacity:1}33%,100%{opacity:0}}
+</style>
+<defs>
+<filter id="glowG" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="glowR" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<linearGradient id="lg" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="900" y2="0"><stop offset="0" stop-color="#39ff14"/><stop offset="1" stop-color="#ff2d55"/></linearGradient>
+<radialGradient id="bgG" cx="1" cy="1" r="0.8"><stop offset="0" stop-color="#39ff14" stop-opacity=".13"/><stop offset="1" stop-color="#39ff14" stop-opacity="0"/></radialGradient>
+<radialGradient id="bgR" cx="0" cy="0" r="0.7"><stop offset="0" stop-color="#ff2d55" stop-opacity=".12"/><stop offset="1" stop-color="#ff2d55" stop-opacity="0"/></radialGradient>
+<linearGradient id="scanG" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#39ff14" stop-opacity="0"/><stop offset="1" stop-color="#39ff14" stop-opacity=".22"/></linearGradient>
+<pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="#ffffff" stroke-opacity=".035"/></pattern>
+</defs>
+<rect x="0" y="0" width="900" height="466" rx="18" fill="#0b0f15" stroke="#1b2330"/><rect x="0" y="0" width="900" height="466" rx="18" fill="url(#bgG)"/><rect x="0" y="0" width="900" height="466" rx="18" fill="url(#bgR)"/><text x="36" y="38" font-size="11" letter-spacing="2" fill="#ff2d55">02</text><text x="66" y="38" font-size="11" letter-spacing="2" fill="#7f8a99">EXPERIENCE</text><rect class="draw" x="199" y="70" width="2" height="300" fill="url(#lg)" style="animation-delay:.3s"/><g class="fu" style="animation-delay:0.40s"><text x="36" y="80" font-size="10.5" letter-spacing=".5" fill="#39ff14">JUN 2026 — SEP 2026</text>
+<circle cx="200" cy="76" r="6" fill="#06090d" stroke="#39ff14" stroke-width="2" filter="url(#glowG)"/><circle cx="200" cy="76" r="2.5" fill="#39ff14" class="pulse"/>
+<text x="224" y="80" font-size="15" font-weight="700" fill="#eaf6ee">Full-Stack Developer Trainee</text>
+<text x="224" y="100" font-size="12" fill="#39ff14">The Connector Consultancy (D&amp;Partners) · Alexandria</text>
+<text x="224" y="120" font-size="12" fill="#7f8a99">Built full-stack features with React, Next.js, Node.js, Express and SQL,</text>
+<text x="224" y="137" font-size="12" fill="#7f8a99">following Git-based team workflows. Practiced Docker &amp; deployment.</text></g><g class="fu" style="animation-delay:0.80s"><text x="36" y="176" font-size="10.5" letter-spacing=".5" fill="#ff2d55">MAR 2025 — SEP 2026</text>
+<circle cx="200" cy="172" r="6" fill="#06090d" stroke="#ff2d55" stroke-width="2" filter="url(#glowR)"/><circle cx="200" cy="172" r="2.5" fill="#ff2d55" class="pulse"/>
+<text x="224" y="176" font-size="15" font-weight="700" fill="#eaf6ee">Publicity &amp; Media Team Lead · HR &amp; Team Manager (Robotics)</text>
+<text x="224" y="196" font-size="12" fill="#ff2d55">IEEE PUA Student Branch</text>
+<text x="224" y="216" font-size="12" fill="#7f8a99">Led publicity, media and campaigns; authored the branch brand identity guidelines.</text>
+<text x="224" y="233" font-size="12" fill="#7f8a99">Ran recruitment and team operations for the Robotics Committee (RUV competition).</text></g><g class="fu" style="animation-delay:1.20s"><text x="36" y="272" font-size="10.5" letter-spacing=".5" fill="#39ff14">NOV 2025 — PRESENT</text>
+<circle cx="200" cy="268" r="6" fill="#06090d" stroke="#39ff14" stroke-width="2" filter="url(#glowG)"/><circle cx="200" cy="268" r="2.5" fill="#39ff14" class="pulse"/>
+<text x="224" y="272" font-size="15" font-weight="700" fill="#eaf6ee">Brand Ambassador</text>
+<text x="224" y="292" font-size="12" fill="#39ff14">Sprints · Hybrid</text>
+<text x="224" y="312" font-size="12" fill="#7f8a99">Promoted educational and technology programs through community</text>
+<text x="224" y="329" font-size="12" fill="#7f8a99">outreach and digital engagement.</text></g><g class="fu" style="animation-delay:1.60s"><text x="36" y="368" font-size="10.5" letter-spacing=".5" fill="#ff2d55">GAIC CERTIFIED</text>
+<circle cx="200" cy="364" r="6" fill="#06090d" stroke="#ff2d55" stroke-width="2" filter="url(#glowR)"/><circle cx="200" cy="364" r="2.5" fill="#ff2d55" class="pulse"/>
+<text x="224" y="368" font-size="15" font-weight="700" fill="#eaf6ee">Generative AI Trainee</text>
+<text x="224" y="388" font-size="12" fill="#ff2d55">Sprints &amp; IOM Egypt</text>
+<text x="224" y="408" font-size="12" fill="#7f8a99">Completed the Generative AI Certification: prompt engineering,</text>
+<text x="224" y="425" font-size="12" fill="#7f8a99">generative AI applications and AI-assisted workflows.</text></g>
+</svg>
